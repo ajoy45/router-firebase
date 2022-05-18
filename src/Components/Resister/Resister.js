@@ -1,19 +1,19 @@
 import React from 'react';
-import useFirebase from '../../hooks/useFirebase';
+import './Resister.css'
+const Resister = () => {
 
-const Login = () => {
-    const{singInWithGoogle}=useFirebase();
+
     return (
         <div>
-            <h1>please login</h1>
-            <button onClick={singInWithGoogle}>Google Singin</button>
+            <h1>please resistration</h1>
+            
             <form>
                 <input type="email" name="" id=""placeholder='Type your emai' /><br></br>
                 <input type="password" name="" id=""placeholder='Type your password' /><br></br>
-                <input type="submit" value="Login" />
+                <input type="submit" value="Resister" />
             </form>
         </div>
     );
 };
 
-export default Login;
+export default Resister;
